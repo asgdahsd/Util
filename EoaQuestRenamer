@@ -1,0 +1,14 @@
+while wait() do
+    for i, v in pairs(Workspace:GetChildren()) do
+        pcall(function()
+                if v.Name == "Quest Board" and v.Papers then
+                    v.Papers.Part.Name = v.Papers.Part.SurfaceGui.Frame.QuestName.Text
+                end
+            for i2, v2 in pairs(Workspace.Map:GetChildren()) do
+                if v2.Name == "Quest Board" and v2.Papers then
+                    v2.Papers.Part.Name = v2.Papers.Part.SurfaceGui.Frame.QuestName.Text
+                end      
+        end
+    end)
+    end
+    end
