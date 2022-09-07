@@ -1,4 +1,4 @@
-while wait() do
+repeat
     for i, v in pairs(Workspace:GetChildren()) do
         pcall(function()
                 if v.Name == "Quest Board" and v.Papers then
@@ -12,3 +12,6 @@ while wait() do
     end)
     end
     end
+    until
+    not game.Workspace["Quest Board"].Papers.Part
+    
